@@ -1,0 +1,15 @@
+.App{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.App input {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  padding: auto;
+}
