@@ -1,16 +1,20 @@
 import './App.css';
 import JSONDATA from "./MOCK_DATA.json"
+import { useState } from 'react';
 
 
 function App() {
+
+  const [SearchTerm, setSearchTerm] = useState('')
+
   return (
    <div className = "App">
      <input type= "text" placeholder = "Search...."/> 
        {JSONDATA.map((val,key)=>{
-           let t = val;
+
          return (
            <div className = "user" key = {key}>
-             <p>(t.fist_name)</p>
+             <p>(val.fist_name)</p>
            </div>
          );
        })};
