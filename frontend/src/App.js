@@ -24,7 +24,7 @@ function App() {
        }).map((val,key) => {
          return (
            <div className = "user" key = {key}>
-             <p>(val.first_name)</p>
+             <p>{val.first_name}</p>
            </div>
          );
        })};
